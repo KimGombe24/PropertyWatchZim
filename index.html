@@ -1,0 +1,1006 @@
+<html>
+    <head>
+        <title>Property Watch Zim</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicon/2.0.1/css/bootstrap.min.css">
+        <style>
+            .row{
+                display: none;
+                flex-wrap: wrap;
+                padding: 0 4px;
+            }
+            .column{
+                flex: 25%;
+                padding: 0 7px;
+            }
+            .column img{
+                width: 100%;
+                margin-top: 8px;
+                vertical-align: middle;
+            }
+.inputs{
+padding:8px;
+position:relative;
+width:50%;
+
+        }
+html,body{
+    overflow-x: hidden;
+    color: rgb(10, 10, 10);
+    font-size: 17px;
+    background-color: rgb(10, 10, 10);
+}
+        .btn{
+            position:absolute;
+            padding:8px;
+            color:white;
+            background-color:gray;
+            margin:0px;
+        }
+        #d{
+            color: rgb(27, 4, 4);
+        }
+            .footer{
+            
+            
+                display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-gap:18px;
+            padding: 8px;
+
+            }
+           .ifooter{
+            background-color:rgb(112, 112, 216);
+            padding:12px;
+            color:rgb(241, 233, 233);
+           }
+        .nav{
+            background-color:rgb(152, 228, 181) ;
+            color:white;
+            padding: 7px;
+            padding-left:49px ;
+            padding-right: 49px;
+             
+            display:flex;
+            justify-content: space-between;
+ 
+        }
+.icon{
+width:1em;
+height:1em;
+}
+        
+        
+        body{
+            margin: 0;
+            font-family: monospace;
+            font-size: 17px;
+            text-decoration: none;
+            color:black;
+            background-color:#ddd;
+
+           
+        }
+        .player{
+        position: fixed;
+        bottom: 0px;  
+        height: 10vh;
+        width: 100%;
+        background-color: #fff;
+
+       }
+       .player audio{
+padding:0px ;
+margin: 0px;
+            width: 100%;
+        }
+a{
+text-decoration:none;
+color:#000000;
+}
+        .container{
+            
+            background-color:rgb(190, 245, 218) ;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr  ;
+            grid-gap:18px;
+             padding-left: 70px;
+            padding-right:70px ;
+            
+        }
+        .container10{
+            background-color:rgb(152, 228, 181) ;
+        
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr  ;
+            grid-gap:18px;
+             
+        }
+        .container20{
+            background-color:white ;
+        
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr  ;
+            grid-gap:18px;
+            padding-left: 70px;
+            padding-right:70px ;
+            padding-bottom: 70px;
+
+        }
+        .container30{
+            background-color:rgb(191, 247, 177) ;
+        
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-gap:18px;
+            padding-left: 70px;
+            padding-right:70px ;
+            padding-bottom: 70px;
+
+        }
+        .container170{
+            background-color:white ;
+         
+            display:grid;
+            grid-template-columns: 1fr 1fr   ;
+            grid-gap:18px;
+            padding-left: 70px;
+            padding-right:70px ;
+            padding-bottom: 70px;
+            padding-top: 110px;          
+        }
+        .container70{
+            background-color:white ;
+         
+            display:grid;
+            grid-template-columns: 1fr 1fr   ;
+            grid-gap:18px;
+            padding-left: 70px;
+            padding-right:70px ;
+            padding-bottom: 70px;
+                   
+        }
+        @media screen and (max-width: 400px) {
+            .container{
+                display:block;
+               float:left;
+               
+                
+            }
+        }
+
+        @media screen  and (max-width: 400px)  {
+         .column{
+             flex: 100%;
+         }   
+        }
+        div.pr{
+          
+       
+     
+             color:black;
+            font-size: 30px;
+        }
+        .download{
+            
+            
+            
+            color:black;
+            font-size: 30px;
+        }
+        
+
+        ul{
+            list-style: none;
+            display:flex;
+            justify-items: space-between;
+            padding:8px;
+            
+            
+        }
+        .about{
+             
+            width:100%;
+            height: 200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr   ;
+           margin-left: 270px;
+           margin-top: 0;
+           background-color:white;
+           padding-bottom: 9px;
+           padding-top: 17px;
+           
+        }
+        .mai{
+            display: grid;
+            grid-template-columns: 1fr 1fr   ;
+            background-color:white;
+            padding-bottom: 9px;
+            padding-top: 17px;
+            height: 370px;
+            
+        }
+         
+
+        .innerabout{
+            
+            height: 170px;
+            width:300px;
+            
+   
+            padding:4px;
+            color:black;
+             padding-left: 47px;
+             text-align: center;
+
+           
+
+        }
+       
+        #a{
+           border-radius:10px; 
+        }
+        button{
+            color:white;
+            border:none;
+            background-color:rgb(9, 255, 0);
+            padding:8px;
+             padding-left: 40px;
+             padding-right: 40px;
+        }
+        button.sec{
+            color:white;
+            border:none;
+            background-color:rgb(228, 213, 9);
+            padding:8px;
+             padding-left: 40px;
+             padding-right: 40px;
+        }
+        .inner{
+            
+             
+            padding:4px;
+            color:black;
+             padding-left: 47px;
+             text-align: center;
+        }
+        .inner70{
+            
+             
+            padding:4px;
+            color:black;
+             padding-left: 47px;
+             text-align: left;
+        }.inner{
+            
+             
+            padding:4px;
+            color:black;
+            
+             text-align: center;
+        }
+        .inner10{
+            
+             
+            padding:4px;
+            color:black;
+            display: flex;
+            justify-content: center;
+        } 
+        .inner20{
+            
+             
+            padding:4px;
+            color:white;
+            text-align: center;
+            background-color:rgb(221, 207, 77);
+
+            
+        } 
+        .inner70 img{
+               max-width: 390px;  
+                } 
+                .inner170 img{
+               max-width: 390px;  
+                } 
+        .inner30{
+            
+             
+            padding:4px;
+            padding-top: 20px;
+            color:black;
+            text-align: center;
+            background-color:white;
+        } 
+
+        li{
+            padding-left:12px;
+            
+        }
+        
+        /*a:hover{
+            background-color:white;
+            color:blue;
+            
+        }*/
+        button:hover{
+            background-color:white;
+            color:black;
+        }
+        .texttool{
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color:black;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+        }
+        .texttool:hover{
+            visibility: visible;
+        }
+        p#more{
+color: black;
+        }
+        
+        .nav a{
+color:black;
+display: block;
+ padding-left: 14px;
+        }
+        .nav a:hover{
+            color:black;
+             
+        }
+        .footer{
+            background-color :black;
+        
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-gap:18px;
+        padding: 8px;
+        }
+        .ifooter{
+            background-color: black;
+            padding:12px;
+            color:rgb(241, 233, 233);
+        }
+        @media screen and (max-width: 400px) {
+            .footer{
+                display:block;
+               float:left;
+              
+               
+                
+            }
+        }
+
+        #trade{
+            background-color:black;
+            text-align: center;
+            display: block;
+        }
+        @media screen and (max-width: 400px) {
+            #trade{
+                display:block;
+               float:left;
+               
+                
+            }
+@media screen and (max-width: 400px) {
+            body{
+               font-size:12px;
+               text-decoration: none;
+                
+            }
+
+        }
+        a{
+            text-decoration: none;
+        }
+
+       
+       
+        .itemm{
+            color:black;
+            height: 300px;
+            
+        }
+        
+        
+        }
+        #preloader{
+           background: #fff url("Filled fading balls.gif") no-repeat center center;
+           background-size: 4%;
+           height: 100vh;
+           width: 100%;
+           position: fixed;
+           z-index: 100;
+
+       }
+        
+        .tab-body{
+            display:  none;
+            padding: 10px;
+            margin-right: 10px;
+            overflow: hidden;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+        .tab-bodi{
+            display: none;
+            padding: 10px;
+            margin-right: 10px;
+            overflow: hidden;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+        .active{
+            color: black;
+            background-color: #ddd;
+            min-width: 175px;
+            padding: 10px;
+            margin-right: 10px; 
+           
+        }
+        .iactive{
+            color: black;
+            background-color: white;
+            min-width: 100px;
+            padding: 10px;
+            margin-right: 10px; 
+           
+        }
+        .iactive img{
+            border-radius: 50%;
+           
+        }
+        .tabs h4{
+            color: black;
+            padding: 10px;
+            background-color:white;
+        }
+         h4{
+            color: black;
+            padding: 10px;
+            background-color:white;
+        }
+        .load{
+            color: black;
+            padding: 10px;
+            background-color:white;
+        }
+        .material{
+            padding: 10px;
+        }
+        p.sec{
+           display: flex;
+           justify-content: center;
+           background-color:rgb(190, 245, 218) ;
+           margin: 0;
+           
+           padding :17px ;
+           padding-top: 70px; 
+        }
+
+        p.sec20{
+           display: flex;
+           justify-content: center;
+           background-color:white ;
+           margin: 0;
+           
+           padding :17px ;
+           padding-top: 70px; 
+        }
+        p.sec30{
+           display: flex;
+           justify-content: center;
+           background-color:rgb(191, 247, 177) ;
+           margin: 0;
+            
+           padding :17px ;
+           padding-top: 70px;
+        }
+        .nav a#c{
+                 display: none;
+             }
+        @media screen and (max-width: 600px) {
+            .container30{
+                grid-template-columns: 1fr   ;
+            }
+            .container{
+                grid-template-columns: 1fr   ;
+            } 
+            .container20{
+                grid-template-columns: 1fr   ;  
+            }
+            .container10{
+                grid-template-columns: 1fr   ; 
+            }
+            .container70{
+                grid-template-columns: 1fr   ; 
+                grid-gap:10px;
+            padding-left: 0;
+            padding-right:0 ;
+            padding-bottom: 70px;
+            }
+            .container170{
+                grid-template-columns: 1fr   ;
+                grid-gap:10px;
+            padding-left: 0;
+            padding-right:0 ;
+            padding-bottom: 70px;
+            }
+            .inner70{
+                padding: 0px;
+                text-align: center;
+            }
+            .inner170{
+                padding: 0px;
+                text-align: center;
+            }
+            .footer{
+                grid-template-columns: 1fr   ; 
+                text-align: center;
+            }
+            .inner70 img{
+                 width: 100vw;
+            } 
+            .inner170 img{
+                 width: 100vw;
+            } 
+            
+             .about{
+                display:  block;
+                margin: 20px;
+               
+             }
+             .nav a.c{
+                 display: none;
+             }
+
+              .nav a#c{
+                display:flex;
+              }
+.mail1 img { 
+    width: 200px;
+}
+             
+        }
+
+
+
+
+        .products-preview{
+   position: fixed;
+   top:0; left:0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0,0,0,.8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.products-preview .preview{
+   display: none;
+   padding:2rem;
+   text-align: center;
+   background: #fff;
+   position: relative;
+   margin:2rem;
+   width: 40rem;
+}
+
+.products-preview .preview.active{
+   display: inline-block;
+}
+
+.products-preview .preview img{
+   height: 30rem;
+}
+
+.products-preview .preview .fa-times{
+   position: absolute;
+   top:1rem; right:1.5rem;
+   cursor: pointer;
+   color:#444;
+   font-size: 4rem;
+}
+
+.products-preview .preview .fa-times:hover{
+   transform: rotate(90deg);
+}
+
+.products-preview .preview h3{
+   color:#444;
+   padding:.5rem 0;
+   font-size: 2.5rem;
+}
+
+.products-preview .preview .stars{
+   padding:1rem 0;
+   font-size: 1.7rem;
+}
+
+.products-preview .preview .stars i{
+   color:#27ae60;
+}
+
+.products-preview .preview .stars span{
+   color:#999;
+}
+
+.products-preview .preview p{
+   line-height: 1.5;
+   padding:1rem 0;
+   font-size: 1.6rem;
+   color:#777;
+}
+
+.products-preview .preview .price{
+   padding:1rem 0;
+   font-size: 2.5rem;
+   color:#27ae60;
+}
+
+.products-preview .preview .buttons{
+   display: flex;
+   gap:1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+}
+
+.products-preview .preview .buttons a{
+   flex:1 1 16rem;
+   padding:1rem;
+   font-size: 1.8rem;
+   color:#444;
+   border:.1rem solid #444;
+}
+
+.products-preview .preview .buttons a.cart{
+   background: #444;
+   color:#fff;
+}
+
+.products-preview .preview .buttons a.cart:hover{
+   background: #111;
+}
+
+.products-preview .preview .buttons a.buy:hover{
+   background: #444;
+   color:#fff;
+}
+
+        </style>
+        <meta name="description" content="We help you find your ideal accommodation at free of cost."  >
+         <meta property="og:title" content="Property Watch Zim ">
+         <meta property="og:description" content="We help you find your ideal accommodation at free of cost.">
+         <meta property="og:image" content="6676508.png">
+    </head>
+<body>
+
+    
+    <div class="ma" style="position: fixed; width: 100vw;"  >
+        <div class="nav" id="mav"   >
+            
+            <h3 style="color: black; display: flex; justify-content: center;   "><img src="6676508.png" alt="" width="40px" style=" display: inline-block;" >
+                 <div style="  display: inline-block; margin-bottom: 0; padding-left: 20px;"> Property Watch<br/> Zim</div> </h3>
+            <ul>
+                
+               <a class="c"  href="#trade1">REGISTER <span class="tooltiptexts"></span></a>
+               <a class="c" href="#trade1">ABOUT <span class="tooltiptextc"> </span></a>
+               <a class="c"  href="#trade1" >SERVICES<span class="tooltiptexts"></span></a>
+                <a   class="product" data-name="p-4" id="c" ><button  >MENU</button></a>
+                    
+            </ul>
+        </div>
+    </div>
+        
+
+        
+        
+        <div class="container170">
+            <div class="inner70"    >
+                <h1>We help you find your ideal accommodation at free of cost.</h1>
+                
+                <p><pre><i>Fast Services - Free of cost</i>
+                </pre> 
+                </p>
+                <a href="#trade1"><button  >CONTACT</button></a>
+                       
+            </div>
+            <div class="inner70">
+                <img src="g2[1].jpg" alt=""  width="390px" >
+            </div>
+            
+             
+        </div>
+
+    <div class="container10">
+        <div class="inner10">
+           <p>FREE</p>
+ 
+        </div>
+        <div class="inner10">
+            <p>FAST</p>
+           
+ 
+        </div>
+        <div class="inner10">
+            <p>SECURE</p>
+            
+        </div>
+         
+    </div>
+     
+    <div class="container70">
+        <div class="inner70">
+            <img src="20221128_154402.png" alt=""  width="390px">
+        </div>
+        <div class="inner70"    >
+
+            <h4>House hunting can be stressful and tiring. </h4>
+        
+        <p><i style="color:red;  ">x</i> Time consuming 
+        </p>
+        <p><i style="color:red;  ">x</i> Unfair Prices 
+        </p> 
+         <p><i style="color:red;  ">x</i> Unsafe 
+        </p>
+        <p><i style="color:red;  ">x</i> Far from school 
+        </p> 
+        <p class="a"><a href="#trade1"><button class="sec"  >CONTACT</button></a>
+            <a href="#mav">
+            </a>  <span class="otexttool"></span>  </p>
+           
+                   
+        </div>
+       
+        
+         
+    </div>
+
+<p  class="sec">   <b> Why our service?  </p></b>
+    <div class="container">
+        <div class="inner">
+            <img src="Adobe_Express_20221128_1411270_1.png" alt="" width="100px">
+           
+
+<h5><p>As current NUST students we have hind sight on the challenges university students face in seeking accommodation.  </p> </h5>
+
+        </div>
+        <div class="inner">
+            <img src="Adobe_Express_20221128_1411270_1.png" alt="" width="100px">   
+           
+            <h5><p>As current NUST students we have hind sight on the challenges university students face in seeking accommodation.  </p> </h5>
+
+        </div>
+        <div class="inner">
+            <img src="Adobe_Express_20221128_1411270_1.png" alt="" width="100px">
+           
+            <h5><p>As current NUST students we have hind sight on the challenges university students face in seeking accommodation.  </p> </h5>
+        </div>
+         
+    </div>
+    <p class="sec"> <a href="#trade1">   <button class="sec"   >ABOUT</button> </a> </p>
+
+    <p  class="sec20">   <b> People who had our service.  </p></b>
+    <div class="container20">
+        <div class="inner20">
+             
+           
+<p>Farai </p> 
+<h5>Excellent and really helpful during emergencies. Although came late for school, l didn't have to worry about accomodation.  </h5>
+
+        </div>
+        <div class="inner20">
+               
+           
+<p>
+   Kim
+     </p> 
+<h5>Had a lot more time to focus on other things.</h5>
+
+        </div>
+        <div class="inner20">
+            
+           
+            <p>Samson
+                 </p> 
+            <h5>Got housing with optimum requirements.</h5>
+        </div>
+         
+    </div>
+
+
+    <p  class="sec30">   <b>The Process  </p></b>
+    <div class="container30">
+        <div class="inner30">
+            <img src="483947.png" alt="" width="40px"> 
+            <b> <h6>Call Us</h6></b>
+<p>Click on contact button then dial the number provided. </p> 
+
+
+        </div>
+        <div class="inner30">
+            <img src="115902.png" alt="" width="40px">     
+            <b> <h6>Discuss Priories</h6></b>  
+<p>
+    What are your number 1 must haves (geyser, wifi, distance from school etc) and budget. 
+    
+     </p> 
+ 
+
+        </div>
+        <div class="inner30">
+            <img src="17736.png" alt="" width="40px"> 
+            <b> <h6>Get A Room</h6></b>
+            <p>
+               Select from list of potential rooms we will provide.
+                 </p> 
+             
+        </div>
+        <div class="inner30">
+            <img src="1087117.png" alt="" width="40px"> 
+            <b> <h6 >Pay Rent</h6></b>
+            <p>
+               Pay the landlord to secure a room.
+                 </p> 
+            
+        </div>
+        <a href="#trade"    ><button  >VIEW AVAILABLE ROOMS >>></button></a>
+    </div>
+
+
+     
+    
+<!--<div class="letters">
+    <form action="database.php" method="POST">
+
+            <input class="inputs" type="text"  name="email" placeholder="Email Address" required autocomplete="off">
+            <input class="btn" type="submit" name="subscribe" value="Subscribe">
+        </form>
+    
+    </div>//-->
+
+    <div class="footer" id="trade1">
+        <div class="ifooter">
+        <h3>Services </h3><hr><pre>  
+<i> Helping you find accommodation</i> 
+<i> Educating on real estate in Zimbabwe</i>
+   
+ </pre></pre> 
+    </div>
+        
+    <div class="ifooter">
+        <h3>Co-founders</h3> <hr>  <img src="IMG-20221130-WA0014.jpg" alt="" width="70px"> Farai Tirivaviri <br/>
+        <img src="IMG-20221130-WA0015.jpg" alt="" width="70px" height="49px" >  Adela Dube
+
+        
+       
+            
+    </div>
+        
+    <div class="ifooter">
+        <h3>Follow Us</h3>
+        <hr>
+      <a href="https://www.facebook.com/farie67?mibextid=ZbWKwL">
+<div class="pr"><p><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+</svg></p></div>
+       </a>  
+      <a href="http://www.youtube.com/@PropertyWatchZim" style="color: white;"> YouTube -Property Watch Zim</a>
+
+    </div>
+        
+    <div class="ifooter">
+        <h3>Contact Us</h3>
+        <hr>
+       <p><pre>+263 774 704 024
+    </pre>
+           <pre>+263 786 073 995
+           </pre>
+           
+       </p>
+            
+    </div>
+        
+       </div>
+       <div>
+    <p    style="color:  rgb(10, 10, 10); text-align: center; padding-bottom: 20px;">&copy; 2023 PWZ  - Developer - Kim Simukai Gombe - +263 785 010 642 </p></div>
+     
+
+    <div class="products-preview">
+
+        <div class="preview" data-target="p-4">
+           <i class="fas fa-times">x</i>
+            
+            
+           <ul style="display: flex; flex-direction: column;  padding : 10px;">
+                
+            <a   href="#trade1" class="c">REGISTER <span class="tooltiptexts"></span></a>
+            <a  href="#trade1" class="d">ABOUT <span class="tooltiptextc"> </span></a>
+            <a   href="#trade1" class="e">SERVICES<span class="tooltiptexts"></span></a>
+             <a href="#trade1"  class="f"><button  >CONTACT</button></a>
+                 
+         </ul>
+            
+            
+        </div>
+    </div>
+</body>
+<script>
+let preveiwContainer = document.querySelector('.products-preview');
+let previewBox = preveiwContainer.querySelectorAll('.preview');
+
+document.querySelectorAll(' .product').forEach(product =>{
+  product.onclick = () =>{
+    preveiwContainer.style.display = 'flex';
+    let name = product.getAttribute('data-name');
+    previewBox.forEach(preview =>{
+      let target = preview.getAttribute('data-target');
+      if(name == target){
+        preview.classList.add('active');
+      }
+    });
+  };
+});
+
+previewBox.forEach(close =>{
+  close.querySelector('.fa-times').onclick = () =>{
+    close.classList.remove('active');
+    preveiwContainer.style.display = 'none';
+  };
+ 
+   
+});
+
+previewBox.forEach(close =>{
+  close.querySelector('.c').onclick = () =>{
+    close.classList.remove('active');
+    preveiwContainer.style.display = 'none';
+  };
+ 
+   
+});
+previewBox.forEach(close =>{
+  close.querySelector('.d').onclick = () =>{
+    close.classList.remove('active');
+    preveiwContainer.style.display = 'none';
+  };
+ 
+   
+});
+
+previewBox.forEach(close =>{
+  close.querySelector('.e').onclick = () =>{
+    close.classList.remove('active');
+    preveiwContainer.style.display = 'none';
+  };
+ 
+   
+});
+previewBox.forEach(close =>{
+  close.querySelector('.f').onclick = () =>{
+    close.classList.remove('active');
+    preveiwContainer.style.display = 'none';
+  };
+ 
+   
+});
+
+
+document.querySelector('.c').onclick = () =>{
+    close.classList.remove('active');
+    preveiwContainer.style.display = 'none';
+  }; 
+   document.querySelector('#ok').onclick = () =>{
+    close.classList.remove('active');
+    preveiwContainer.style.display = 'none';
+  };  
+  </script>
+</html>
